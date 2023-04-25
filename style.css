@@ -1,0 +1,131 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+   font-family:'fira sans' san-serif;
+}
+:root{
+   --pink:#ff1493;
+   --darker:#1f2937;
+   --dark:#484848;
+   --darkest:#111827;
+   --grey:#808080;
+   --purple:#ac10ac;
+   --light:#fff; 
+}
+body{
+   display: flex;
+   flex-direction:column;
+   min-height:100vh;
+   background-color: var(--dark);
+   color: var(--light);
+}
+header{
+   padding:2rem 1rem;
+   max-width:800px;
+   width:100%;
+   margin:0 auto;
+}
+header h1{
+   font-size:2.5rem; 
+   font-weight:400;
+   background-image:linear-gradient(to right, var(--pink), var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-bottom:1rem;
+
+}
+#new-task-form{
+   display:flex;
+}
+input, button{
+   appearance:none;
+   outline:none;
+   border:none;
+   background:var(--darker);
+}
+#todo-input{
+   flex:1 1 0%;
+   background-color:var(--darker);
+   padding:12px;
+   border-radius:12px;
+   margin-right:12px;
+   color:var(--light);
+   font-size:16px;
+   margin-bottom:10px;
+}
+#todo-input:placeholder{
+   color:var(--grey);
+}
+#add-btn{
+   color:var(--pink);
+   font-size:16px;
+   font-weight:650;
+   background-image:linear-gradient(to right, var(--pink), var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    cursor:pointer;
+    transition:0.3s;
+    text-transform:capitalize;
+}
+#add-btn:hover{
+   opacity:0.8;
+}
+#add-btn:active{
+   opacity:0.6;
+}
+main{
+   flex:1 1 0%;
+   max-width:750px;
+   width:100%;
+   margin:0  auto;
+}
+.task-list{
+   padding:1 rem;
+}
+.task-list h2{
+   font-size:1.5rem;
+   font-weight:450;
+   color:var(--grey);
+   margin-bottom:1rem;
+   text-transform:capitalize;
+}
+.task-list .content{
+  
+   padding: 12px;
+   border-radius: 12px;
+   margin-bottom: 12px;
+   
+}
+ #todo-list{
+   color:white;
+   font-size:1.125rem;
+   width:100%;
+   display:block;
+   transition:0.4s;
+   list-style-type: lower-greek;
+   margin-left:20px;
+   text-transform:capitalize;
+}
+#todo-list li{
+   background-color:var(--darkest);
+   margin-bottom:20px;
+   border-radius:8px;
+   padding:10px;
+   color:var(--pink);
+
+}
+.content button{
+   background-image:linear-gradient(to right, var(--pink), var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    cursor:pointer;
+    font-size:20px;
+    float:right;
+    margin-left:10px;
+    margin-right:20px;
+}
+ button:hover{
+   opacity:0.8;
+   font-size:21px;
+}
