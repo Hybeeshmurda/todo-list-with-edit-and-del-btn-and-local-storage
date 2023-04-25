@@ -27,8 +27,8 @@ header{
    margin:0 auto;
 }
 header h1{
-   font-size:2.5rem; 
-   font-weight:400;
+   font-size:3.0rem; 
+   font-weight:650;
    background-image:linear-gradient(to right, var(--pink), var(--purple));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
